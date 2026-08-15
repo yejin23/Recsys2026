@@ -1,18 +1,47 @@
+# Revisiting the Assumptions of Shared-Account Sequential Recommendation
 
-## 1. Dataset
-- **Amazon (2014)**: https://amazon-reviews-2023.github.io/
+Official implementation and experimental results for the paper:
+> **Revisiting the Assumptions of Shared-Account Sequential Recommendation**
 
-## 2. Environment & Implementation
-All model experiments in this study were implemented and executed within the **RecBole** framework.
-- **Python** >= 3.8
-- **PyTorch (torch)** == 2.8.0
-- **RecBole** == 1.1.1
-- **NumPy** == 1.26.4
-- **Pandas** == 2.3.3
-- **SciPy** == 1.13.1
-- **scikit-learn** == 1.6.1
+## 1. Overview
 
-## 3. Experimental Results
+This repository contains the implementation and experimental results used in our study on shared-account sequential recommendation (SSR). 
+We investigate how shared-account environments affect conventional sequential recommendation models and analyze five key characteristics of shared-account data:
+
+* Group Size
+* Sequence Length
+* User Similarity
+* Sparsity
+* Item Popularity
+
+## 2. Dataset
+
+We conduct experiments on two Amazon review datasets:
+
+* **Amazon Beauty**
+* **Amazon Video Games**
+
+Dataset source: https://amazon-reviews-2023.github.io/
+
+## 3. Environment & Implementation
+
+All experiments were implemented and executed using the **RecBole** framework.
+
+* **Python** >= 3.8
+* **PyTorch** == 2.8.0
+* **RecBole** == 1.1.1
+* **NumPy** == 1.26.4
+* **Pandas** == 2.3.3
+* **SciPy** == 1.13.1
+* **scikit-learn** == 1.6.1
+
+The following sequential recommendation models are evaluated:
+
+* **GRU4Rec**
+* **SASRec**
+* **BERT4Rec**
+
+## 4. Experimental Results
 ### 1. Amazon Beauty
 
 | Feature             | Level |   HR@10 (GRU)   |   HR@10 (SAS)   |   HR@10 (BERT)  |  NDCG@10 (GRU)  |  NDCG@10 (SAS)  |  NDCG@10 (BERT) |
