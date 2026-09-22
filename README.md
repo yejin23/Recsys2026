@@ -1,5 +1,8 @@
 # Revisiting the Assumptions of Shared-Account Sequential Recommendation
 
+![Recommender System Figure](./images/recsys_fig.png)
+
+
 Official implementation and experimental results for the paper:
 > **Revisiting the Assumptions of Shared-Account Sequential Recommendation**
 
