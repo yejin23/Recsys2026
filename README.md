@@ -5,6 +5,7 @@
 
 Official implementation and experimental results for the paper:
 > **Revisiting the Assumptions of Shared-Account Sequential Recommendation**
+> https://dl.acm.org/doi/10.1145/3773078.3841282
 
 ## 1. Overview
 
